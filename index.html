@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lontong Online</title>
+    <title>Kenyang Online</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -24,7 +24,7 @@
 
     <div id="menu-bar" class="fas fa-bars"></div>
 
-    <a href="#" class="logo">Lontong/Ketupat</a>
+    <a href="#" class="logo">Makan-Makan</a>
 
     <nav class="navbar ">
         <a href="#home">home</a>
@@ -50,14 +50,24 @@
     <div class="slide-container active">
         <div class="slide">
             <div class="content">
-                <span>Ketupat Gulai Paku</span>
-                <h3>nike metcon shoes</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-                <a href="#" class="btn">add to cart</a>
+                <h3>lontong gulai nangka</h3>
+                <p>Lontong sayur khas Padang siap disantap bersama keluarga. Anda juga bisa menambahkan lauk agar santapan lebih semarak.</p>
+                <button class="btn" onclick="addtoCart(`lontong gulai nangka`)">Add To Cart</button>
+                <script>
+                    function addtoCart(ids){
+                        if(confirm('Yakin mau dimasukkan dalam keranjang pesanan ???')){
+                            return true ;
+                        }else{
+                            return true ;
+                        }
+                    }
+                    
+                </script>
+
             </div>
             <div class="image">
-                <img src="images/home-shoe-1.png" class="shoe" alt="">
-                <img src="images/home-text-1.png" class="text" alt="">
+                <img src="images/image-removebg.png" class="lontong" alt="">
+                <span class="txtLontong"><h1><b style="font-size: 30px;color:rgb(108, 49, 49)"><br/>Lamak Bana!!!</b></h1></span>
             </div>
         </div>
     </div>
@@ -65,14 +75,13 @@
     <div class="slide-container">
         <div class="slide">
             <div class="content">
-                <span>nike blue shoes</span>
-                <h3>nike metcon shoes</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-                <a href="#" class="btn">add to cart</a>
+                <h3>ketupat gulai paku</h3>
+                <p>Ketupat Gulai Paku khas Padang siap disantap bersama keluarga. Anda juga bisa menambahkan lauk agar santapan lebih semarak.</p>
+                <button class="btn" onclick="addtoCart(`ketupat gulai paku`)">Add To Cart</button>
             </div>
             <div class="image">
-                <img src="images/home-shoe-2.png" class="shoe" alt="">
-                <img src="images/home-text-2.png" class="text" alt="">
+                <img src="images/image-removebg-preview (1).png" class="lontong" alt="">
+                <span class="txtLontong"><h1><b style="font-size: 30px;color:rgb(108, 49, 49)"><br/>Lamak Bana!!!</b></h1></span>
             </div>
         </div>
     </div>
@@ -80,14 +89,14 @@
     <div class="slide-container">
         <div class="slide">
             <div class="content">
-                <span>nike yellow shoes</span>
-                <h3>nike metcon shoes</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-                <a href="#" class="btn">add to cart</a>
+                <h3>bubur ayam</h3>
+                <p>Bubur lembut ini memang cocok jika disantap untuk mengenyangkan sekaligus menghangatkan badan. Selain suwiran ayam, bubur ayam juga sering disajikan dengan kacang kedelai, irisan cakue, tongcai, irisan daun bawang, bawang goreng, dan tak ketinggalan kerupuk atau emping.</p>
+                <button class="btn" onclick="addtoCart(`bubur ayam`)">Add To Cart</button>
+
             </div>
             <div class="image">
-                <img src="images/home-shoe-3.png" class="shoe" alt="">
-                <img src="images/home-text-3.png" class="text" alt="">
+                <img src="images/image-removebg-preview (2).png" class="lontong" alt="">
+                <span class="txtLontong"><h1><b style="font-size: 30px;color:rgb(187, 101, 34)"><br/>Lamak Bana!!!</b></h1></span>
             </div>
         </div>
     </div>
@@ -108,19 +117,19 @@
         <div class="box">
             <i class="fas fa-shipping-fast"></i>
             <h3>fast delivery</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, fugit.</p>
+            <p>Diantar dengan cepat dan tepat</p>
         </div>
 
         <div class="box">
             <i class="fas fa-undo"></i>
-            <h3>10 days replacements</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, fugit.</p>
+            <h3>fast replacement</h3>
+            <p>langsung ganti jika ada kendala dan kesalahan</p>
         </div>
 
         <div class="box">
             <i class="fas fa-headset"></i>
             <h3>24 x 7 support</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, fugit.</p>
+            <p>selalu ada disetiap kapanpun kamu mau</p>
         </div>
 
     </div>
@@ -131,7 +140,7 @@
 
 <!-- products section starts  -->
 
-<section class="products" id="products">
+<section class="products" id="categories">
 
     <h1 class="heading"> <span>Categories</span> </h1>
 
@@ -143,18 +152,18 @@
                 <a href="#" class="fas fa-share"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <img src="images/product-1.png" alt="">
+            <img src="images/product.png" alt="">
             <div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">$120.99 <span>$150.99</span></div>
+                <h3>soto ayam</h3>
+                <div class="price">Rp. 12.000 <span>Rp. 15.000</span></div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <button class="btn" onclick="addtoCart(`soto ayam`)">Add To Cart</button>
             </div>
         </div>
 
@@ -164,18 +173,18 @@
                 <a href="#" class="fas fa-share"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <img src="images/product-2.png" alt="">
-            <<div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">$120.99 <span>$150.99</span></div>
+            <img src="images/product1.png" alt="">
+            <div class="content">
+                <h3>mie ayam bakso</h3>
+                <div class="price">Rp. 15.000 <span>Rp. 19.000</span></div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <button class="btn" onclick="addtoCart(`mie ayam bakso`)">Add To Cart</button>
             </div>
         </div>
 
@@ -185,10 +194,10 @@
                 <a href="#" class="fas fa-share"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <img src="images/product-3.png" alt="">
+            <img src="images/product2.png" alt="">
             <div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">$120.99 <span>$150.99</span></div>
+                <h3>nasi kuning</h3>
+                <div class="price">Rp. 16.000 <span>Rp. 20.000</span></div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -196,7 +205,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <button class="btn" onclick="addtoCart(`nasi kuning`)">Add To Cart</button>
             </div>
         </div>
 
@@ -206,10 +215,10 @@
                 <a href="#" class="fas fa-share"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <img src="images/product-4.png" alt="">
+            <img src="images/product3.png" alt="">
             <div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">$120.99 <span>$150.99</span></div>
+                <h3>nasi uduk komplit</h3>
+                <div class="price">Rp.20.000 <span>Rp. 25.000</span></div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -217,7 +226,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <button class="btn" onclick="addtoCart(`nasi uduk komplit`)">Add To Cart</button>
             </div>
         </div>
 
@@ -227,10 +236,10 @@
                 <a href="#" class="fas fa-share"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <img src="images/product-5.png" alt="">
+            <img src="images/product4.png" alt="">
             <div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">$120.99 <span>$150.99</span></div>
+                <h3>nasi kebuli</h3>
+                <div class="price">Rp. 25.000 <span>Rp. 29.000</span></div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -238,7 +247,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <button class="btn" onclick="addtoCart(`nasi kebuli`)">Add To Cart</button>
             </div>
         </div>
 
@@ -248,18 +257,18 @@
                 <a href="#" class="fas fa-share"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
-            <img src="images/product-6.png" alt="">
+            <img src="images/product5.png" alt="">
             <div class="content">
-                <h3>nike shoes</h3>
-                <div class="price">$120.99 <span>$150.99</span></div>
+                <h3>nasi goreng</h3>
+                <div class="price">Rp. 15.000 <span>Rp. 19.000</span></div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <button class="btn" onclick="addtoCart(`nasi goreng`)">Add To Cart</button>
             </div>
         </div>
 
@@ -271,88 +280,88 @@
 
 <!-- featured section starts  -->
 
-<section class="featured" id="featured">
+<section class="featured" id="products">
 
     <h1 class="heading"> <span>featured</span> products </h1>
 
     <div class="row">
         <div class="image-container">
             <div class="small-image">
-                <img src="images/f-img-1.1.png" class="featured-image-1" alt="">
-                <img src="images/f-img-1.2.png" class="featured-image-1" alt="">
-                <img src="images/f-img-1.3.png" class="featured-image-1" alt="">
-                <img src="images/f-img-1.4.png" class="featured-image-1" alt="">
+                <img src="images/nasi ayam geprek.png" class="featured-image-1" alt="">
+                <img src="images/teh es.png" class="featured-image-1" alt="">
+                <img src="images/lalapan.png" class="featured-image-1" alt="">
+                <img src="images/paket ayam geprek.png" class="featured-image-1" alt="">
             </div>
             <div class="big-image">
-                <img src="images/f-img-1.1.png" class="big-image-1" alt="">
+                <img src="images/nasi ayam geprek.png" class="big-image-1" alt="">
             </div>
         </div>
         <div class="content">
-            <h3>new nike airmax shoes</h3>
+            <h3>paket nasi ayam geprek</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis praesentium odit voluptas illum iure libero quis fuga commodi. Autem.</p>
-            <div class="price">$80.99 <span>$120.99</span></div>
-            <a href="#" class="btn">add to cart</a>
+            <p>Dilengkapi dengan sambal geprek yang mantap dan lalapan yang fresh serta minuman teh es menyegarkan</p>
+            <div class="price">Rp. 15.000 <span>Rp. 20.000</span></div>
+            <button class="btn" onclick="addtoCart(`paket nasi ayam geprek`)">Add To Cart</button>
         </div>
     </div>
 
     <div class="row">
         <div class="image-container">
             <div class="small-image">
-                <img src="images/f-img-2.1.png" class="featured-image-2" alt="">
-                <img src="images/f-img-2.2.png" class="featured-image-2" alt="">
-                <img src="images/f-img-2.3.png" class="featured-image-2" alt="">
-                <img src="images/f-img-2.4.png" class="featured-image-2" alt="">
+                <img src="images/nasi pecel lele.png" class="featured-image-2" alt="">
+                <img src="images/teh es.png" class="featured-image-2" alt="">
+                <img src="images/pecel lele.png" class="featured-image-2" alt="">
+                <img src="images/paket nasi pecel lele.png" class="featured-image-2" alt="">
             </div>
             <div class="big-image">
-                <img src="images/f-img-2.1.png" class="big-image-2" alt="">
+                <img src="images/nasi pecel lele.png" class="big-image-2" alt="">
             </div>
         </div>
         <div class="content">
-            <h3>new nike airmax shoes</h3>
+            <h3>paket nasi pecel lele</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis praesentium odit voluptas illum iure libero quis fuga commodi. Autem.</p>
-            <div class="price">$80.99 <span>$120.99</span></div>
-            <a href="#" class="btn">add to cart</a>
+            <p>Dilengkapi dengan sambal terasi yang mantap dan lalapan yang fresh serta minuman teh es yang menyegarkan</p>
+            <div class="price">Rp. 12.000 <span>Rp. 17.000</span></div>
+            <button class="btn" onclick="addtoCart(`paket nasi pecel lele`)">Add To Cart</button>
         </div>
     </div>
 
     <div class="row">
         <div class="image-container">
             <div class="small-image">
-                <img src="images/f-img-3.1.png" class="featured-image-3" alt="">
-                <img src="images/f-img-3.2.png" class="featured-image-3" alt="">
-                <img src="images/f-img-3.3.png" class="featured-image-3" alt="">
-                <img src="images/f-img-3.4.png" class="featured-image-3" alt="">
+                <img src="images/nasi ayam bakar.png" class="featured-image-3" alt="">
+                <img src="images/teh es.png" class="featured-image-3" alt="">
+                <img src="images/ayam bakar.png" class="featured-image-3" alt="">
+                <img src="images/paket nasi ayam bakar.png" class="featured-image-3" alt="">
             </div>
             <div class="big-image">
-                <img src="images/f-img-3.1.png" class="big-image-3" alt="">
+                <img src="images/nasi ayam bakar.png" class="big-image-3" alt="">
             </div>
         </div>
         <div class="content">
-            <h3>new nike airmax shoes</h3>
+            <h3>paket nasi ayam bakar</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis praesentium odit voluptas illum iure libero quis fuga commodi. Autem.</p>
-            <div class="price">$80.99 <span>$120.99</span></div>
-            <a href="#" class="btn">add to cart</a>
+            <p>Dilengkapi dengan sambal terasi yang mantap dan lalapan yang fresh serta minuman teh es yang menyegarkan</p>
+            <div class="price">Rp. 16.000 <span>Rp. 20.000</span></div>
+            <button class="btn" onclick="addtoCart(`paket nasi ayam bakar`)">Add To Cart</button>
         </div>
     </div>
 
@@ -364,20 +373,20 @@
 
 <section class="review" id="review">
 
-    <h1 class="heading"> customer's <span>review</span> </h1>
+    <h1 class="heading"> customer's <span>review</span> (Langganan Awak) </h1>
 
     <div class="box-container">
 
         <div class="box">
             <img src="images/pic1.png" alt="">
             <h3>Adelia</h3>
-            <p>Sepatu Nike sangatlah keren</p>
+            <p>Recommended sarapan pagi disini</p>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
             </div>
         </div>
 
@@ -397,7 +406,7 @@
         <div class="box">
             <img src="images/pic3.png" alt="">
             <h3>Sutijan</h3>
-            <p>Luar Biasa</p>
+            <p>Enak Banget Cuyy</p>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -419,9 +428,9 @@
 
     <div class="content">
         <h3>monthly newsletter</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ullam veniam at itaque culpa hic corporis saepe dicta doloremque nihil.</p>
+        <p> Sampaikan kritik dan saranmu disini yaa! <i class="fas fa-heart text-danger" style="font-size: 18px;"> </i> </p>
         <form action="">
-            <input type="email" placeholder="enter your email" class="box">
+            <input type="email" placeholder="Enter Your Email" class="box">
             <input type="submit" value="send" class="btn">
         </form>
     </div>
@@ -447,7 +456,7 @@
         <div class="box">
             <h3>quick links</h3>
             <a href="#">home</a>
-            <a href="#">products</a>
+            <a href="#">categories</a>
             <a href="#">products</a>
             <a href="#">review</a>
         </div>
@@ -462,13 +471,13 @@
 
         <div class="box">
             <h3>follow us</h3>
-            <a href="#">facebook</a>
-            <a href="#">twitter</a>
-            <a href="#">instagram</a>
-            <a href="#">pinterest</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
         </div>
 
-        <div class="credit">created by <span> Arief Syaifudin </span> | all rights reserved</div>
+        <div class="credit">created by <span> Nayla Tsabitah </span> | all rights reserved</div>
 
     </div>
 
